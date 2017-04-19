@@ -1,38 +1,42 @@
-#front {
-/*	height: 200px;
-	width: 200px;*/
-	/*background-color: yellow;*/
+.container-fluid {
+	font-family: 'Play', sans-serif;
 }
 
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000px;
+	margin-left: 36.5%;
 }
 	/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
+		/*margin-left: 33.3%;*/
 	}
+
 
 .flip-container, .front, .back {
 	width: 320px;
 	height: 480px;
 	border: 1px solid #b7b8c5;
+	padding: 0;
+	
 }
 
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-	font-family: 'Play', sans-serif;
 	font-size: 40px;
 	text-align: center;
+	padding-top: 15px;
+	padding-right: 5px;
+	padding-left: 5px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -51,3 +55,4 @@
 	transform: rotateY(180deg);
 	background-color: #a0cdee;
 }
+
