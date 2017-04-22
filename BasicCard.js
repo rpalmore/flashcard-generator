@@ -5,8 +5,6 @@ function BasicCard(front, back) {
     } else {
         return new BasicCard(front, back);
     }
-    // $("<p>" + this.front + "</p>").appendTo(".front");
-    // $("<p>" + this.back + "</p>").appendTo(".back");
 }
 
 
